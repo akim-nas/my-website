@@ -1,51 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 
-:root {
-	--dark-blue: #12232e;
-	--med-blue: #007cc7;
-	--light-blue: #4da8da;
-	--shadow-dark-blue: #203647;
-	--shadow-light-blue: #eefbfb;
-}
+* { margin: 0; padding: 0; }
 
-* { padding: 0; margin: 0; font-family: "Open Sans", sans-serif; }
-
-html, body { height: 100vh; }
-
-.flex-container {
+html, body {
 	height: 100vh;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	background-color: var(--med-blue);
+	width: 100vw;
 }
 
-.navbar {
-	padding: 1rem 1rem;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	background-color: var(--light-blue);
+@media only screen and (min-width: 768px) {
+	.grid-container {
+		background-color: hsl(100, 50%, 50%);
+	}
 }
 
-.nav-item a, .nav-item a:hover, .nav-item a:visited {
-	text-decoration: none;
-	color: var(--shadow-light-blue);
-	font-weight: 700;
-	transition: 0.2s;
-}
-
-.nav-item a:hover {
-	color: ;
-	transition: 0.2s;
-}
-
-.footer {
-	background-color: ;
-	font-weight: 400;
-	font-size: 0.75rem;
-	padding: 2rem 1rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		background-color: hsl(200, 50%, 50%);
+	}
 }

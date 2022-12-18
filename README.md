@@ -1,10 +1,20 @@
-# **My Website**
-Hello, please feel free to correct my code. I don't like frontend that much.
+# Personal Website
+
+### Goal:
+My goal for this website is to just have a pleasing looking frontend and a *simpler* way to learn
+backend development. This website would also be used to have a link to my projects on Github.
+
 ---
-### Notes
-- Using this to get better at front end
-	- Please feel free to help with the grid css if you wish.
-	- My goal is to not have the greatest front end but try some cool things
-	on the backend.
-- If you would like to recommend a backend framework please feel free to let me know
-	- I would like to try to learn something in may be Go or Dart, maybe even Ruby if its on rails.
+
+### What is being used:
+
+**Front end**
+- HTML
+- CSS - Grid
+- JS
+
+**Back end**
+- N/A
+- PHP?
+- Flask?
+- Django?

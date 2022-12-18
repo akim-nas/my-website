@@ -16,19 +16,18 @@ html, body {
 	background-color: var(--raven);
 }
 
+.grid-container {
+	display: grid;
+}
+
 @media (min-width: 320px) {
-	.grid-container {
-	}
 }
 
 @media (min-width: 768px) {
-	.grid-container {
-	}	
 }
 
 @media (min-width: 1440px) {
 	.grid-container {
-		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
 

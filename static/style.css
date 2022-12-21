@@ -5,30 +5,53 @@
 
 html, body { height: 100vh; }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+:root {
+    --gap: 2rem;
+    --padding: 2rem;
+    --desktop-fr: 5 / 6;
 }
 
-.grid-item {
-    display: grid;
-    border: 1px solid black;
+.grid-container { display: grid; }
+
+.grid-item { border: 1px solid red; }
+
+.main-sect {
+    grid-area: main;
 }
-/* deskop */
-@media (min-width: 1280px) {
-    body {
-        background-color: red;
-    }
+
+.about-sect {
+    grid-area: about;
 }
-/* tablet */
-@media (min-width: 768px) {
-    body {
-        background-color: blue;;
-    }
+
+.xp-sect {
+    grid-area: xp;
 }
-/* mobile */
-@media (min-width: 360px) {
-    body{
-        background-color: green;
+
+.edu-sect {
+    grid-area: edu;
+}
+
+.proj-sect {
+    grid-area: proj;
+}
+
+.skill-sect {
+    grid-area: skill;
+}
+
+.info-sect {
+    grid-area: info;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+@media only screen and (min-width: 1280px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: var(--desktop-fr) 0.83fr 0.83fr 0.83fr 0.83fr 0.83fr;
+        grid-template-areas: "main main" "about about" "xp edu" "proj skill" "info info" "footer footer";
+        box-sizing: border-box;
     }
 }

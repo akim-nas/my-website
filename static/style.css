@@ -1,73 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
-/* this is a test to see if my new thing is connected to github */
-/* this is the third test */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap');
+
 * { margin: 0; padding: 0; }
 
 html, body {
     height: 100vh;
     box-sizing: border-box;
+    background-color: white;
+    font-family: 'Fira Sans', sans-serif;
 }
 
-:root {
-    --gap: 2rem;
-    --padding: 2rem;
+:root { --black: #1b1c1e; }
+
+.content {
+    width: 600px;
+    margin: auto;
+    padding: 6rem;
 }
 
-.grid-container { display: grid; }
-
-.grid-item {
-    border: 1px solid red;
-    display: grid;
-    justify-content: center;
+h1 {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: 600;
 }
 
-.main-sect {
-    grid-area: main;
+h3 {
+    color: var(--black);
+    font-size: 1rem;
 }
 
-.about-sect {
-    grid-area: about;
+p {
+    color: var(--black);
+    font-size: 1rem;
 }
 
-.xp-sect {
-    grid-area: xp;
-}
+span { font-weight: bold; }
 
-.edu-sect {
-    grid-area: edu;
-}
+a { color: blue; }
 
-.proj-sect {
-    grid-area: proj;
-}
+a:visited { text-decoration: none; }
 
-.skill-sect {
-    grid-area: skill
-}
-
-.info-sect {
-    grid-area: info;
-}
-
-.footer {
-    grid-area: footer;
-}
-
-/* Mobile */
-@media only screen and (min-width: 320px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 4fr 2fr 1.25fr 1.25fr 1.25fr 1.25fr 0.75fr 1fr;
-        grid-template-areas: "main" "about" "xp" "edu" "proj" "skill" "info" "footer";
-    }
-}
-
-/* Desktop */
-@media only screen and (min-width: 800px) {
-    .grid-container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 4fr 2fr 1.5fr 1.5fr 0.75fr 1fr;
-        grid-template-areas: "main main" "about about" "xp edu" "proj skill" "info info" "footer footer";
-        gap: 1rem;
-    }
-}
+ul { padding-left: 3rem; }

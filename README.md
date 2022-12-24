@@ -10,7 +10,7 @@ backend development. This website would also be used to have a link to my projec
 
 **Front end**
 - HTML
-- CSS - Grid
+- SCSS - Grid
 - JS
 
 **Back end**

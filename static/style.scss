@@ -7,3 +7,35 @@ html, body {
     height: 100vh;
     box-sizing: border-box;
 }
+
+:root {
+    --blue: #1176aa;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 5fr;
+}
+
+#title-sect {
+    padding: 1rem;
+}
+
+#navbar {
+    padding: 0.7rem 1rem;
+    background: var(--blue);
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin: auto;
+    }
+
+    a:hover {
+        background-color: darkblue;
+    }
+}
+
+.nav-item {
+    margin: 0 1rem 0 0;
+}

@@ -14,7 +14,4 @@ backend development. This website would also be used to have a link to my projec
 - JS
 
 **Back end**
-- N/A
-- PHP?
-- Flask?
-- Django?
+- PHP

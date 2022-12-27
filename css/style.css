@@ -14,7 +14,6 @@ html, body {
 :root {
   --black: #1f1f1f;
   --gray: #516566;
-  --blue: #2aa0c8;
   --light-blue: #a7c0c7;
 }
 
@@ -26,13 +25,20 @@ code {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "title" "about" "links";
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "nav" "title" "about" "links";
   gap: 1rem;
 }
 
 .grid-item {
   padding: 2rem;
+}
+
+#navbar {
+  grid-area: nav;
+}
+#navbar a {
+  color: var(--gray);
 }
 
 #title-sect {

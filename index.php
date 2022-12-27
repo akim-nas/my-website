@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,11 +10,15 @@
 <body>
     <div class="grid-container">
 
-        <div class="grid-item grid-item-1" id="title-sect">
+        <?php
+            include_once "navbar.php"
+        ?>
+
+        <div class="grid-item grid-item-2" id="title-sect">
             <div class="title-item title-item-1" id="title">Akim Nas</div>
         </div>
 
-        <div class="grid-item grid-item-2" id="about-sect">
+        <div class="grid-item grid-item-3" id="about-sect">
             <div class="about-item about-item-1 semi-title">About Me</div>
             <br/>
             <br/>
@@ -36,13 +39,13 @@
             </div>
         </div>
 
-        <div class="grid-item grid-item-3" id="links-sect">
+        <div class="grid-item grid-item-4" id="links-sect">
             <div class="link-item link-item-1 semi-title">Links</div>
             <br/>
             <br/>
             <ul class="links">
                 <li class="link link-1" id="home">
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li class="link link-2" id="github">
                     <a href="https://github.com/akim-nas" target="_blank">GitHub</a>

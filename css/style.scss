@@ -25,13 +25,21 @@ code {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "title" "about" "links";
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "nav" "title" "about" "links";
     gap: 1rem;
 }
 
 .grid-item {
     padding: 2rem;
+}
+
+#navbar {
+    grid-area: nav;
+
+    a {
+        color: var(--gray);
+    }
 }
 
 #title-sect {

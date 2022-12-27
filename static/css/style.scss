@@ -24,7 +24,7 @@ code {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "nav" "title" "about" "links";
     gap: 1rem;
@@ -37,10 +37,9 @@ code {
 
 #navbar {
     grid-area: nav;
-    display: inline-flex;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
 
     a {
         color: var(--gray);

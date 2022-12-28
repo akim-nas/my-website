@@ -36,11 +36,13 @@ code {
 
 #navbar {
   grid-area: nav;
-  position: -webkit-sticky;
-  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: -webkit-sticky; /* safari */
+  position: sticky;
+  top: 0; /* for firefox */
+  background-color: var(--light-blue);
 }
 #navbar a {
   color: var(--gray);

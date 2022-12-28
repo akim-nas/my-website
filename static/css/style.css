@@ -4,21 +4,36 @@
 }
 
 html, body {
-  background-color: var(--light-blue);
   height: 100vh;
   width: 50vw;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
 }
+html a, body a {
+  color: var(--black);
+}
 
 :root {
   --black: #1f1f1f;
-  --gray: #516566;
-  --light-blue: #a7c0c7;
+}
+
+#dark-mode-toggle {
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.dark-mode {
+  background-color: var(--black);
+  color: #fff;
+}
+.dark-mode a {
+  color: #fff;
+}
+.dark-mode #navbar {
+  background-color: var(--black);
 }
 
 code {
-  color: var(--gray);
   font-size: 1rem;
 }
 
@@ -31,10 +46,11 @@ code {
 }
 
 .grid-item {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 #navbar {
+  background-color: #fff;
   grid-area: nav;
   display: flex;
   justify-content: space-between;
@@ -42,10 +58,12 @@ code {
   position: -webkit-sticky; /* safari */
   position: sticky;
   top: 0; /* for firefox */
-  background-color: var(--light-blue);
 }
-#navbar a {
-  color: var(--gray);
+#navbar #nav-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #title-sect {
@@ -54,13 +72,11 @@ code {
 #title-sect #title {
   font-size: 3rem;
   font-weight: 700;
-  color: var(--black);
 }
 
 .semi-title {
   font-size: 2rem;
   font-weight: 600;
-  color: var(--black);
 }
 
 #about-sect {
@@ -68,7 +84,6 @@ code {
 }
 #about-sect .about-text {
   margin-left: 2rem;
-  color: var(--black);
 }
 #about-sect .about-text span {
   font-weight: 600;
@@ -78,14 +93,15 @@ code {
   grid-area: links;
 }
 #links-sect .links {
-  list-style-type: georgian;
+  list-style-type: none;
   margin-left: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-#links-sect .links .link > a {
-  color: var(--gray);
+
+#friendly-note {
+  padding: 2rem;
 }
 
 /* TABLET */

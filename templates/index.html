@@ -9,11 +9,18 @@
 </head>
 <body>
     <div class="grid-item grid-item-1" id="navbar">
-        <a class="nav-item nav-item-1" href="/">Home</a>
-        <a class="nav-item nav-item-2" href="/">News</a>
-        <a class="nav-item nav-item-3" href="/">Projects</a>
-        <a class="nav-item nav-item-4" href="/">Support</a>
+        <div class="nav-item nav-item-1" id="nav-links">
+            <a class="nav-item nav-item-1" href="/">Home</a>
+            <a class="nav-item nav-item-2" href="/">News</a>
+            <a class="nav-item nav-item-3" href="/">Projects</a>
+            <a class="nav-item nav-item-4" href="/">Support</a>
+        </div>
+        <div class="nav-item nav-item-2" id="nav-btn">
+            <button id="dark-mode-toggle" onclick="darkMode()">Toggle Light Mode</button>
+        </div>
     </div>
     {% block content %}{% endblock %}
+
+    <p id="friendly-note">Try to find some easter eggs.</p>
 </body>
 </html>

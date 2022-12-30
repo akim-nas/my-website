@@ -1,3 +1,6 @@
+$black: #1f1f1f;
+$white: #fff;
+
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +12,8 @@ html, body {
     margin: auto;
     font-family:Arial, Helvetica, sans-serif;
     a {
-        color: var(--black);
+        color: $black;
     }
-}
-
-:root {
-    --black: #1f1f1f;
 }
 
 #dark-mode-toggle {
@@ -23,14 +22,14 @@ html, body {
 }
 
 .dark-mode {
-    background-color: var(--black);
-    color: #fff;
+    background-color: $black;
+    color: $white;
     a {
-        color: #fff;
+        color: $white;
     }
 
     #navbar {
-        background-color: var(--black);
+        background-color: $black;
     }
 }
 
@@ -51,7 +50,7 @@ code {
 }
 
 #navbar {
-    background-color: #fff;
+    background-color: $white;
     grid-area: nav;
     display: flex;
     justify-content: space-between;
@@ -116,7 +115,7 @@ code {
 }
 
 /* TABLET */
-@media only screen and(max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     html, body {
         width: 75vw;
     }

@@ -10,11 +10,7 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 html a, body a {
-  color: var(--black);
-}
-
-:root {
-  --black: #1f1f1f;
+  color: #1f1f1f;
 }
 
 #dark-mode-toggle {
@@ -23,14 +19,14 @@ html a, body a {
 }
 
 .dark-mode {
-  background-color: var(--black);
+  background-color: #1f1f1f;
   color: #fff;
 }
 .dark-mode a {
   color: #fff;
 }
 .dark-mode #navbar {
-  background-color: var(--black);
+  background-color: #1f1f1f;
 }
 
 code {
@@ -119,4 +115,6 @@ code {
   html, body {
     width: 100vw;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

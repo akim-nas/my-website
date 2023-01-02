@@ -1,17 +1,21 @@
 # Personal Website
 
-### Goal:
-My goal for this website is to just have a pleasing looking frontend and a *simpler* way to learn
-backend development. This website would also be used to have a link to my projects on Github.
+### By: Akim
 
----
+### **DEScription**
+This is my personal website to be used as a learn more about me and link to my
+projects.
 
-### What is being used:
-
-**Front end**
-- HTML
-- SCSS - Grid
+*Front end*
+- SCSS
 - JS
 
-**Back end**
-- Flask
+*Back end*
+- Flask or PHP im not sure yet
+
+### **Install**
+```fish
+git clone https://github.com/akim-nas/my-website
+cd my-website/flaskr/
+flask --app __init__ run
+```
